@@ -1,5 +1,6 @@
 package edu.usmp.sunatapi.model;
 
+import java.math.BigDecimal;
 import java.time.ZonedDateTime;
 
 import javax.persistence.Entity;
@@ -17,7 +18,7 @@ public class Factura {
     private Integer id;
     private String rucEmisor;
     private String rucContribuyente;
-    private Integer montoFactura;
+    private BigDecimal montoFactura;
     private ZonedDateTime date;
 
     public Integer getId() {
@@ -44,11 +45,11 @@ public class Factura {
         this.rucContribuyente = rucContribuyente;
     }
 
-    public Integer getMontoFactura() {
+    public BigDecimal getMontoFactura() {
         return this.montoFactura;
     }
 
-    public void setMontoFactura(Integer montoFactura) {
+    public void setMontoFactura(BigDecimal montoFactura) {
         this.montoFactura = montoFactura;
     }
 
