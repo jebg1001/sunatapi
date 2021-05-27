@@ -1,5 +1,5 @@
-@Host = https://usmpsunat.herokuapp.com/
-GET {{Host}}/facturas HTTP/1.1
+@Host = https://usmpsunat.herokuapp.com/api
+GET {{Host}}/factura/ HTTP/1.1
 Accept: application/json
 
 GET {{Host}}/factura/1 HTTP/1.1
