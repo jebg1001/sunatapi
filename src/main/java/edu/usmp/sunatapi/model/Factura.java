@@ -15,9 +15,9 @@ public class Factura {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String descrip;
-    private String razonSoc;
-    private Integer montoIGV;
+    private String rucEmisor;
+    private String rucContribuyente;
+    private Integer montoFactura;
     private ZonedDateTime date;
 
     public Integer getId() {
@@ -28,28 +28,28 @@ public class Factura {
         this.id = id;
     }
 
-    public String getDescrip() {
-        return this.descrip;
+    public String getRucEmisor() {
+        return this.rucEmisor;
     }
 
-    public void setDescrip(String descrip) {
-        this.descrip = descrip;
+    public void setRucEmisor(String rucEmisor) {
+        this.rucEmisor = rucEmisor;
     }
 
-    public String getRazonSoc() {
-        return this.razonSoc;
+    public String getRucContribuyente() {
+        return this.rucContribuyente;
     }
 
-    public void setRazonSoc(String razonSoc) {
-        this.razonSoc = razonSoc;
+    public void setRucContribuyente(String rucContribuyente) {
+        this.rucContribuyente = rucContribuyente;
     }
 
-    public Integer getMontoIGV() {
-        return this.montoIGV;
+    public Integer getMontoFactura() {
+        return this.montoFactura;
     }
 
-    public void setMontoIGV(Integer montoIGV) {
-        this.montoIGV = montoIGV;
+    public void setMontoFactura(Integer montoFactura) {
+        this.montoFactura = montoFactura;
     }
 
     public ZonedDateTime getDate() {
@@ -59,5 +59,7 @@ public class Factura {
     public void setDate(ZonedDateTime date) {
         this.date = date;
     }
+
+    
     
 }
